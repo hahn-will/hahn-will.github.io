@@ -1,7 +1,32 @@
 <!DOCTYPE html>
 <html>
+<head>
+
+</head>
 <body>
-  <canvas id="MainCanvas"></canvas>
-<script type="text/javascript" src="Start.js"></script>
+  <style>
+
+  .imgbox {
+   display: grid;
+  }
+  .center-full {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100vh;
+  }
+  .center-scaled {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    max-height: 80vh;
+  }
+  </style>
+  <div class="imgbox">
+    <img class="center-full" src="landscape.jpg" alt="Beach" />
+  </div>
+  <div class="imgbox">
+    <img class="center-scaled" src="photo.jpg" alt="Personal Photograph" />
+  </div>
 </body>
 </html>
