@@ -23,8 +23,9 @@ h1.name{
   text-align: center;
 }
 a.name{
-  text-decoration: none;
   color: #606060;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
 }
 .break {
   height: 10px;
