@@ -37,12 +37,16 @@ a.home{
   font-family:"Ubuntu", sans-serif;
   font-size: 20px;
 }
+.resPadding{
+  display: inline;
+  padding-left: 30px;
+}
 a.resume{
   color: #606060;
   text-decoration:none;
   font-family:"Ubuntu", sans-serif;
   font-size: 20px;
-  padding-left: 30px;
+  //padding-left: 30px;
 }
 p.info{
   color: #606060;
@@ -60,4 +64,39 @@ a.info{
   text-decoration:none;
   font-family:"Ubuntu", sans-serif;
   font-size: 15px;
+}
+.centerDownloads {
+  text-align: center;
+}
+.downloadResume {
+  background-color: #606060;
+  line-height: 0;
+  width: 170px;
+  height: 40px;
+}
+a.downloadResume {
+  color: #FEFEFE;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:"Ubuntu", sans-serif;
+  font-size: 15px;
+}
+#centerResume {
+  display: table;
+  margin: auto;
+}
+p.Resume{
+  color: #606060;
+  font-family:"Ubuntu", sans-serif;
+  font-size: 15px;
+  text-align: left;
+  padding-top: 0px;
+}
+li.Resume{
+  color: #606060;
+  font-family:"Ubuntu", sans-serif;
+  font-size: 15px;
+  text-align: left;
 }
