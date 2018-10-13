@@ -10,8 +10,91 @@
   <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
   <link rel="icon" href="images/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="stylesheets/mainStylesheet.css"/>
+  <script>
+  (function() {
+
+	function Slideshow( element ) {
+		this.el = document.querySelector( element );
+		this.init();
+	}
+
+	Slideshow.prototype = {
+		init: function() {
+			this.wrapper = this.el.querySelector( ".slider-wrapper" );
+			this.slides = this.el.querySelectorAll( ".slide" );
+			this.previous = this.el.querySelector( ".slider-previous" );
+			this.next = this.el.querySelector( ".slider-next" );
+			this.index = 0;
+			this.total = this.slides.length;
+			this.timer = null;
+
+			this.action();
+			this.stopStart();
+		},
+		_slideTo: function( slide ) {
+			var currentSlide = this.slides[slide];
+			currentSlide.style.opacity = 1;
+
+			for( var i = 0; i < this.slides.length; i++ ) {
+				var slide = this.slides[i];
+				if( slide !== currentSlide ) {
+					slide.style.opacity = 0;
+				}
+			}
+		},
+		action: function() {
+			var self = this;
+			self.timer = setInterval(function() {
+				self.index++;
+				if( self.index == self.slides.length ) {
+					self.index = 0;
+				}
+				self._slideTo( self.index );
+
+			}, 8000);
+		}
+		/*stopStart: function() {
+			var self = this;
+			//self.el.addEventListener( "mouseover", function() {
+				//clearInterval( self.timer );
+				//self.timer = null;
+
+			}, false);
+			self.el.addEventListener( "mouseout", function() {
+				self.action();
+
+			}, false);
+		}*/
+
+
+	};
+
+	document.addEventListener( "DOMContentLoaded", function() {
+
+		var slider = new Slideshow( "#main-slider" );
+
+	});
+
+
+})();
+</script>
 </head>
 <body>
+  <div class="slider" id="main-slider"><!-- outermost container element -->
+	   <div class="slider-wrapper"><!-- innermost wrapper element -->
+		     <img src="images/slideshow0.jpg" alt="First" class="slide" /><!-- slides -->
+         <img src="images/slideshow1.jpg" alt="Second" class="slide" /><!-- slides -->
+         <img src="images/slideshow2.jpg" alt="Third" class="slide" /><!-- slides -->
+         <img src="images/slideshow3.jpg" alt="Fourth" class="slide" /><!-- slides -->
+         <img src="images/slideshow4.jpg" alt="Fifth" class="slide" /><!-- slides -->
+	   </div>
+  </div>
+
+  <div id="overlay">
+    <div id="text">Overlay Text</div>
+  </div>
+
+  <!--
   <div class="sidenav">
     <a class="enabled" href="about.html">About</a>
     <a class="enabled" href="resume.html">Resume</a>
@@ -56,11 +139,11 @@
   <p class=info>
     Contact me:<br />
 
-    <!--<a href="https://www.linkedin.com/in/william-hahn-73742816b" class=info>LinkedIn</a><br />-->
+    <a href="https://www.linkedin.com/in/william-hahn-73742816b" class=info>LinkedIn</a><br />
     Email: <a href="mailto:hahnw@purdue.edu">hahnw@purdue.edu</a><br />
     Phone: (317) 910-7559
   </p>
   <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="whahnt"><a class="LI-simple-link" href='https://www.linkedin.com/in/whahnt?trk=profile-badge'>William Hahn</a></div>
-  </div>
+</div>-->
 </body>
 </html>
