@@ -60,114 +60,40 @@
 }
 
 #text{
+    display: inline-block;
     position: absolute;
+    width:100%;
     top: 50%;
     left: 50%;
     font-family: "Ubuntu";
-    font-size: 75px;
+    font-size: 50px;
     color: white;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    vertical-align: middle;
 }
 
-/*
-.imgbox {
- display: grid;
-}
-.center-full {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  max-height: 100vh;
-}
-.center-scaled {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 80%;
-  max-height: 80vh;
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0px;
+  line-height: 0
 }
 
-h1.name{
-  color: #606060;
-  font-family: "Ubuntu", sans-serif;
+a {
   text-align: center;
-}
-a.name{
-  color: #606060;
-  font-family: "Ubuntu", sans-serif;
-  text-decoration: none;
-}
-.break {
-  height: 10px;
-  background-color: #444444;
-}
-a.home{
-  color: #606060;
+  width: 15%;
+  vertical-align: middle;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
   text-decoration:none;
-  font-family:"Ubuntu", sans-serif;
-  font-size: 20px;
-}
-.resPadding{
-  display: inline;
-  padding-left: 30px;
-}
-a.resume{
-  color: #606060;
-  text-decoration:none;
-  font-family:"Ubuntu", sans-serif;
-  font-size: 20px;
-  //padding-left: 30px;
-}
-p.info{
-  color: #606060;
-  text-decoration:none;
-  font-family:"Ubuntu", sans-serif;
-  font-size: 15px;
+  color: #f1f1f1
 }
 
-.thinbreak{
-  height: 5px;
-  background-color: #444444;
+a:hover {
+  color: #818181;
 }
-a.info{
-  color: #606060;
-  text-decoration:none;
-  font-family:"Ubuntu", sans-serif;
-  font-size: 15px;
-}
-.centerDownloads {
-  text-align: center;
-}
-.downloadResume {
-  background-color: #606060;
-  line-height: 0;
-  width: 170px;
-  height: 40px;
-}
-a.downloadResume {
-  color: #FEFEFE;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family:"Ubuntu", sans-serif;
-  font-size: 15px;
-}
-#resume {
-  display: table;
-  margin: auto;
-}
-p.Resume{
-  color: #606060;
-  font-family:"Ubuntu", sans-serif;
-  font-size: 15px;
-  text-align: left;
-  padding-top: 0px;
-}
-li.Resume{
-  color: #606060;
-  font-family:"Ubuntu", sans-serif;
-  font-size: 15px;
-  text-align: left;
-}
-*/
