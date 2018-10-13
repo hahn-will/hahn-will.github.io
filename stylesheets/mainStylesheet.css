@@ -3,6 +3,7 @@
 @font-face {
   font-family: "Ubuntu";
   src: url(Fonts/Ubuntu-R.ttf) format("truetype");
+  src: url(Fonts/UbuntuMono-R.ttff) format("truetype");
 }
 
 .slidshowImage {
@@ -81,6 +82,16 @@
   display: inline-block;
   font-size: 0px;
   line-height: 0
+}
+
+h1 {
+  font-family: "Ubuntu";
+  font-variant: small-caps;
+  font-size: 70px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  vertical-align: top;
 }
 
 a {
