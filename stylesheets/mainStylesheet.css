@@ -6,7 +6,7 @@
 .sidenav {
   font-family: "Ubuntu";
   height: 100%;
-  width: 25%;
+  width: 160px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -29,7 +29,7 @@
 }
 
 .main {
-  margin-left: 25%;
+  margin-left: 160px;
 }
 .imgbox {
  display: grid;
