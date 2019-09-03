@@ -8,123 +8,8 @@
 
     <!-- bootstrap core css -->
     <style id="css">
-      #social {
-        margin: 20px 10px;
-        text-align: center;
-      }
-
-      .smGlobalBtn{ /* global button class */
-        display: inline-block;
-        position: relative;
-        cursor: pointer;
-        width: 50px;
-        height: 50px;
-        box-shadow: 0 2px 2px #999;
-        padding: 0px;
-        text-decoration: none;
-        text-align: center;
-        color: #fff;
-        font-size: 25px;
-        font-weight: normal;
-        line-height: 2em;
-        border-radius: 25px;
-        -moz-border-radius:25px;
-        -webkit-border-radius:25px;
-      }
-
-      /* facebook button class*/
-      .facebookBtn{
-        background: #4060A5;
-      }
-
-      .facebookBtn:before{ /* use :before to add the relevant icons */
-        font-family: "FontAwesome";
-        content: "\f09a"; /* add facebook icon */
-      }
-
-      .facebookBtn:hover{
-        color: #4060A5;
-        background: #fff;
-        text-decoration: none;
-      }
-
-      /* twitter button class*/
-      .twitterBtn{
-        background: #00ABE3;
-      }
-
-      .twitterBtn:before{
-        font-family: "FontAwesome";
-        content: "\f099"; /* add twitter icon */
-      }
-
-      .twitterBtn:hover{
-        color: #00ABE3;
-        background: #fff;
-        text-decoration: none;
-      }
-
-      /* linkedin button class*/
-      .linkedinBtn{
-        background: #0077b5;
-      }
-
-      .linkedinBtn:before{
-        font-family: "FontAwesome";
-        content: "\f0e1"; /* add linkedin icon */
-      }
-
-      .linkedinBtn:hover{
-        color: #0077b5;
-        background: #fff;
-        text-decoration: none;
-      }
-      .githubBtn{
-        background: #323131;
-      }
-
-      .githubBtn:before{
-        font-family: "FontAwesome";
-        content: "\f09b";
-      }
-
-      .githubBtn:hover{
-        color: #323131;
-        background: #fff;
-        text-decoration: none;
-      }
-
-      .mailBtn{
-        background: #323131;
-      }
-
-      .mailBtn:before{
-        font-family: "FontAwesome";
-        content: "\f0e0";
-      }
-
-      .mailBtn:hover{
-        color: #323131;
-        background: #fff;
-        text-decoration: none;
-      }
-
-      .snapchatBtn{
-        background: #fffc00;
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-      }
-
-      .snapchatBtn:before{
-        font-family: "FontAwesome";
-        content: "\f2ac";
-      }
-
-      .snapchatBtn:hover{
-        color: #fffc00;
-        background: #fff;
-        text-decoration: none;
-      }
     </style>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <!-- custom styles for this template -->
@@ -134,7 +19,7 @@
   <body>
 
     <header>
-      <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+      <nav class="navbar navbar-expand-sm navbar-light fixed-top bg-light">
         <a class="navbar-brand" href="#">William Hahn</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -142,197 +27,82 @@
         <div class="collapse navbar-collapse" id="navbarcollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#resume">R&eacute;sum&eacute;</a>
+              <a class="nav-link" href="#recentActivity">Recent Activity</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="WillHahnResume.pdf">R&eacute;sum&eacute;</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Me</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
+    <br/>
 
     <main role="main">
-
-      <div id="mycarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#mycarousel" data-slide-to="1"></li>
-          <li data-target="#mycarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="first-slide" style="opacity: 0.6;" src="images/slideshow1.jpg" alt="first slide">
-            <div class="container">
-              <div class="carousel-caption text-left">
-                <h1>About me</h1>
-                <p>I'm currently a computer science student at Purdue University.</p>
-                <p><a class="btn btn-lg btn-primary" href="#aboutme" role="button">Find out more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="second-slide" style="opacity: 0.6;" src="images/slideshow2.jpg" alt="second slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Neural Network</h1>
-                <p>A simple pattern prediction program written through the use of neural networks that allows the user to define the layout.</p>
-                <p><a class="btn btn-lg btn-primary" href="#neuralnetwork" role="button">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="third-slide" style="opacity: 0.6;" src="images/slideshow3.jpg" alt="third slide">
-            <div class="container">
-              <div class="carousel-caption text-right">
-                <h1>DirectX 12 3D Rendering</h1>
-                <p>Implementation of the DirectX 12 API for rendering several 3d cubes on the screen.</p>
-                <p><a class="btn btn-lg btn-primary" href="https://www.github.com/hahn-will" role="button">View the Code.</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">previous</span>
-        </a>
-        <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">next</span>
-        </a>
-      </div>
-
-
-
-      <div class="container marketing">
+      <div class="container" ID="recentActivity">
         <div class="row">
-          <div class="col-lg-4">
-            <img class="" src="images/ideIcon.png" alt="generic placeholder image" width="140" height="140">
-            <h2>Integrated Development Environment</h2>
-            <p>This is an in development project to create an IDE that implements a lot of features found in IDE's like IntelliJ, Netbeans, Eclipse, etc. into one IDE to allow easy
-               cross language development and cross platform development. If you'd like to find out more please click
-               below to visit the project on github.</p>
-            <p><a class="btn btn-secondary" href="https://www.github.com/hahn-will/integrated-development-environment" role="button">View IDE &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="" src="images/screenRecorder.png" alt="generic placeholder image" width="140" height="140">
-            <h2>Screen Recorder</h2>
-            <p>This is another project I've created. The purpose of this project was to create a screen recorder. This is currently being redesigned to implement faster screencapture
-               that is less resource intensive. If you'd like to view the source code or find more out about this project please click below to go to the project github page.</p>
-            <p><a class="btn btn-secondary" href="https://www.github.com/hahn-will/screen-recorder" role="button">View Screen Recorder &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="" src="images/htmlIcon.png" alt="generic placeholder image" width="140" height="140">
-            <h2>This Website</h2>
-            <p>This website is hosted using Github Pages. It is written in HTML and CSS with the help of Bootstrap and awesomefonts. This website is constantly being updated with
-               new information regarding projects my r&eacute;sum&eacute; and how to contact me. If you'd like to take a peak at the source code feel free to click below to find out more.</p>
-            <p><a class="btn btn-secondary" href="https://www.github.com/hahn-will/hahn-will.github.io" role="button">View Code for this Site &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-
-
-        <!-- start the featurettes -->
-
-        <hr id="aboutme" class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">About Me</h2>
-            <p class="lead">I'm a Computer Science student at Purdue University. I like anything involving music or programming. Throughout high school, I developed a passion for music
-                            in band. In college, I've pursued other areas of interest especially those in computer science. Feel free to view my <a href="#resume">r&eacute;sum&eacute;</a>, view my <a href="#projects">projects</a>, or <a href="#social">contact me</a>.</p>
-          </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="images/me.png" alt="generic placeholder image">
-          </div>
-        </div>
-
-        <hr id="projects" class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Projects</h2>
-
-            <p class="lead">All of my projects can be found on <a href="https://www.github.com/hahn-will">GitHub</a>. These projects include class projects and personal projects. They include
-                            the code for this <a href="https://www.github.com/hahn-will/hahn-will.github.io">website</a>, my <a href="#neuralnetwork">neural network</a>, and DirectX Rendering.</p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <a href="https://www.github.com/hahn-will"><img class="featurette-image img-fluid mx-auto" src="images/githubProfilePhoto.png" /></a>
-          </div>
-
-        </div>
-
-        <hr id="resume" class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">R&eacute;sum&eacute;</h2>
-            <p class="lead">This is my current full r&eacute;sum&eacute;. It is available as a <a href="WillHahnResume.pdf">pdf</a> and as a <a class="download" href="WillHahnResume.docx">Word Document</a>. If you have
-                            any questions feel free to <a href="#social">Contact Me</a>.</p>
-          </div>
-          <div class="col-md-5">
-            <a href="WillHahnResume.pdf"><img class="featurette-image img-fluid mx-auto" src="images/willHahnResume.jpg" alt="Generic placeholder image"></a>
-          </div>
-        </div>
-
-        <hr id="neuralnetwork" class="featurette-divider">
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Neural network</h2>
-
-            <p class="lead">This was a project used in my AP Capstone class during my senior year of high school. It is a polymorphic neural network program that
-                            uses a variety of inputs to tell the program what the layout of the neural network is and what the output of the neural network is. If you have
-                            any questions about the neural network please <a href="#emailform">email me</a> or <a href="#social"> contact me</a>.
-                            If you would like to see the source code, please click <a href="https://www.github.com/hahn-will/neural-network">here</a>.</p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <a href="https://www.github.com/hahn-will/neural-network"><img style="display: block; margin: auto; width: 50%; height: auto;" class="featurette-image img-fluid mx-auto" src="images/neuralNetwork.png" alt="Generic placeholder image"></a>
-          </div>
-        </div>
-        <hr id="emailform" class="featurette-divider">
-          <div class="jumbotron">
-            <h3 class="display-4">Email me:</h3>
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Subject</label>
-                <input type="subject" class="form-control" id="subject" aria-describedby="emailHelp" placeholder="Enter Subject"></input>
-                <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/australia.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Australia Study Abroad</h5>
+                <p class="card-text">What I posted about from my study abroad trip in Australia on Medium.</p>
+                <a href="" class="btn btn-primary">Read Post</a>
               </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Body</label>
-                <textarea class="form-control" id="body" rows="8"></textarea>
-              </div>
-              <div class="form-group">
-                <button type="submit" id="send" onclick="window.open('mailto:will@williamhahn.com?subject=' + document.getElementById('subject').value + '&body=' + document.getElementById('body').value);" class="btn btn-primary">Submit</button>
-              </div>
-
-            </form>
-
+            </div>
           </div>
-        <hr class="featurette-divider">
-
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm" >
+              <img src="images/roadTrip.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">West Coast Road Trip</h5>
+                <p class="card-text">My post about the West Coast Road Trip I went on over the summer.</p>
+                <a href="#" class="btn btn-primary">Read Post</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm" >
+              <img src="images/cli_tools.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Linux Command Line Tools Project</h5>
+                <p class="card-text">A library that can be linked against other projects to create a Command Line interface in C++.</p>
+                <a href="https://github.com/hahn-will/cpp-cli-tools" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm" >
+              <img src="images/matrix.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">C++ Matrix Library</h5>
+                <p class="card-text">A library to create floating point matrices in C++.</p>
+                <a href="https://github.com/hahn-will/cpp-matrices" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm" >
+              <img src="images/matrix.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Personal Website</h5>
+                <p class="card-text">This website is statically hosted with Github Pages, and is programmed in html and css.</p>
+                <a href="https://github.com/hahn-will/hahn-will.github.io" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+        </row>
       </div>
-
-
-      <footer class="container">
-        <p class="float-right"></p>
-        <p id="social">
-          <a class="linkedinBtn smGlobalBtn" href="https://www.linkedin.com/in/whahnt" ></a>
-          <a class="twitterBtn smGlobalBtn" href="https://twitter.com/WillHahn5"></a>
-          <a class="githubBtn smGlobalBtn" href="https://www.github.com/hahn-will" ></a>
-          <a class="facebookBtn smGlobalBtn" href="https://www.facebook.com/profile.php?id=100010411503388" ></a>
-
-      </footer>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"><\/script>')</script>
-    <script>
-      function send() {
-        setTimeout(function() {
-          window.open("mailto:will@williamhahn.com?subject=" + document.getElementById('subject').value + "&body=" + document.getElementById('body').value);
-        }, 320);
-      }
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
