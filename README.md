@@ -1,9 +1,8 @@
 # hahn-will.github.io
 This is the repository for my website www.williamhahn.com. Feel free to explore the code and look at what I've used.
-## Bootstrap
-My website uses bootstrap to implement the mobile friendly functionality. I used the bootstrap documentation as well as
-combinations of their examples to create the design for this website.
+## APIs
+Uses Bootstrap 4 with all the expected dependencies you would have with bootstrap www.getbootstrap.com
 ## Images
-All the images are either open source or they are images I've generated or taken myself. If you would like more information on this feel free to contact me by going to my website.
-## Questions?
-Feel free to leave a comment on this project or visit my personal website to email me about your question.
+Most images are rendered, generated, or taken myself. Any images not under that category (including those in renders) are open source or under a license allowing virtually unlimited use including commercial use.
+## Font
+The font for the "Contact Me" buttons is Font Awesome so I can get the logos of the social media logos. The font for the website is Playfair Display.
